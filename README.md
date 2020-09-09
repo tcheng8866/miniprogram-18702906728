@@ -10,9 +10,4 @@
 
 - 一个投票类云开发小程序、包含创建投票、参与投票、投票列表
 
-### 在线预览：
-### [vant-prj -- vue移动端项目](https://tcheng8866.github.io/vant-prj/dist/index.html#/)
-### github地址：
-### [comp-wrap -- NPM上传的组件](https://github.com/tcheng8866/comp-wrap)
-### [miniprogram-prj -- 小程序云开发项目](https://github.com/tcheng8866/miniprogram-prj)
 
