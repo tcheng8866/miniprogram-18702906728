@@ -1,0 +1,17 @@
+<wxs module="dateUtil" src="../../filter/timeUtil.wxs" />
+<view class="component">
+	<view wx:for="{{list}}" wx:key="index"  bindtap="clickItem" data-_id="{{ item._id }}" class="item">
+		<view wx:if="{{ item.avatarUrl }}" class="between">
+			<view class="start">
+				<image src="{{item.avatarUrl}}" class="avatar" title="用户图像" />
+				<view class="name">
+					<view>{{item.nickName}}</view>
+					<view>{{dateUtil.dateFormat(item.endDate,'yyyy/MM/dd')}}截止</view>
+				</view>
+			</view>
+			<view class="total">{{item.total}}人参与</view>
+		</view>
+		<view class="title">{{item.title}}</view>
+		<view class="desc">{{item.desc}}</view>
+	</view>
+</view>

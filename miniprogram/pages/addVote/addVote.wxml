@@ -1,0 +1,24 @@
+<wxs module="dateUtil" src="../../filter/timeUtil.wxs" />
+<view class="container">
+	<view class="section">
+		<view>标题</view>
+		<input value="{{title}}" maxlength="20" auto-focus placeholder="请输入标题" bindblur="titleChange" />
+	</view>
+	<view class="section">
+		<view>补充描述</view>
+		<textarea value="{{desc}}" auto-height placeholder="请输入描述" bindblur="descChange" />
+	</view>
+	<view>
+		<view>选项设置</view>
+		<view wx:for="{{option}}" wx:key="index" >
+			<input placeholder="请输入选项(4到6项)" maxlength="20" bindblur="itemChange" data-index="{{index}}" />
+		</view>	
+	</view>	
+    <view class="section between">
+	  <view>截止日期</view>
+	  <picker mode="date" value="{{endDate}}" bindchange="endDateChange">
+		{{endDate}}
+	  </picker>
+	</view> 
+	<button bindtap="submit">提交</button>
+</view>

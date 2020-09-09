@@ -1,0 +1,4 @@
+<view class="container">
+<!-- 	<view class="block-title">热门投票</view> -->
+	<vote-list id="voteList"></vote-list>
+</view>

@@ -1,0 +1,8 @@
+<view class="container">
+	<view class="start head">
+		<image src="{{userInfo.avatarUrl}}" class="avatar" title="用户图像" />
+		<button class="name" open-type="getUserInfo" hover-class='none' bindgetuserinfo="getUserInfoFun">{{userInfo.nickName}}</button>
+	</view>
+	<button class="btn" wx:if="{{userInfo.nickName == '丐帮田长老' || userInfo.nickName == '乖不如野' }}"><navigator url="../addVote/addVote">创建话题</navigator></button>
+	<button class="btn" open-type="contact">联系客服</button>
+</view>

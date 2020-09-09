@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/joinVote/joinVote",
+    "pages/addVote/addVote"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "大众观点",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index-active.png",
+        "text": "大众观点"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user-active.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

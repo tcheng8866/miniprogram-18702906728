@@ -1,0 +1,18 @@
+.container {}
+
+.head {
+	padding: 10px;
+	background-color: red;
+}
+
+.avatar {
+	width: 100px;
+	height: 70px;
+	border-radius: 10px
+}
+
+.name {
+	line-height: 140rpx;
+	padding: 0 40rpx;
+}
+
