@@ -8,7 +8,7 @@ Page({
 			country: '中华人民共和国共和国',
 			province: '陕西省',
 			city: '商洛市'			
-		},
+		}
 	},
 	// 没有授权是可以操作数据库、云函数的、有openid
 	onLoad: function(options) {
