@@ -22,6 +22,7 @@ function setOption(chart, objArr) {
 var app = getApp()
 Page({
 	data: {
+		btnShow: true, // 提交防重
 		item: {},
 		objArr: [],
 		total: 0,
@@ -124,6 +125,9 @@ Page({
 			})
 			return
 		}
+		this.setData({
+			btnShow: false
+		})
 		const _id = this.data.item._id
 		const index = this.data.curIndex
 		wx.cloud.callFunction({
@@ -147,9 +151,11 @@ Page({
 					canvasFlag: true
 				})
 			})
-
 		}).catch(err => {
 			console.log(err)
+			this.setData({
+				btnShow: true
+			})
 		})
 	},
 	onShareAppMessage: function(res) {}

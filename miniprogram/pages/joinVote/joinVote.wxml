@@ -16,7 +16,7 @@
 			<text>截止时间</text>
 			<text>{{dateUtil.dateFormat(item.endDate,'yyyy/MM/dd')}}</text>
 		</view>
-		<button bindtap="submit">提交</button>
+		<button bindtap="submit" wx:if="{{btnShow}}">提交</button>
 	</view>
 	<view class="canvas">
 		<ec-canvas id="mychart" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
