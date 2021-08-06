@@ -9,7 +9,7 @@
 	vertical-align: middle;
 	word-wrap: break-word;
 	margin: 0 auto;
-  padding: 0 20rpx
+	padding: 0 20rpx
 }
 
 /* 内间距 */
@@ -20,6 +20,10 @@
 /* 内间距- */
 .content-width {
 	padding: 0 20rpx;
+}
+/* 图片宽度占满 */
+image {
+	width: 100%;
 }
 
 /* 居中 */
@@ -75,9 +79,16 @@
 
 /* 首行缩进 */
 .indent {
-	text-indent: 33px;
+	text-indent: 34px;
 }
 
+/* 靠左定位下的左右居中 */
+.transform {
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	position: relative;
+}
 /* 靠左定位下的左右居中 */
 .transform-x {
 	transform: translate(-50%, 0%);

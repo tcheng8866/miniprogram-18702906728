@@ -18,15 +18,15 @@ Page({
 				console.log("authSetting", res.authSetting)
 				if (res.authSetting['scope.userInfo']) {
 					app.globalData.getUserInfoPromise()
-					.then(res=> {
-						app.globalData.userInfo = res.userInfo
-						this.setData({
-							userInfo: res.userInfo
+						.then(res => {
+							app.globalData.userInfo = res.userInfo
+							this.setData({
+								userInfo: res.userInfo
+							})
+							console.log("初始化更新", app.globalData.userInfo)
+						}).catch(e => {
+							console.log("promise fail", e)
 						})
-						console.log("初始化更新", app.globalData.userInfo)
-					}).catch(e => {
-						console.log("promise fail", e)
-					})
 				}
 			}
 		})
